@@ -1,0 +1,44 @@
+@font-face {
+  $font-name: "#{$font-family-custom}Book";
+
+  font-family: $font-family-custom;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../..#{$font-path}/#{$font-name}.woff") format("woff"),
+};
+
+@font-face {
+  $font-name: "#{$font-family-custom}Medium";
+  
+  font-family: $font-family-custom;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../..#{$font-path}/#{$font-name}.woff") format("woff"),
+};
+
+@font-face {
+  $font-name: "#{$font-family-custom}Heavy";
+  
+  font-family: $font-family-custom;
+  font-weight: 600;
+  font-style: bold;
+  src: url("../..#{$font-path}/#{$font-name}.woff") format("woff"),
+};
+
+@font-face {
+  $font-name: "#{$font-family-custom}Demi";
+  
+  font-family: $font-family-custom;
+  font-weight: 700;
+  font-style: bold;
+  src: url("../..#{$font-path}/#{$font-name}.woff") format("woff"),
+};
+
+@font-face {
+  $font-name: "#{$font-family-custom}Bold";
+  
+  font-family: $font-family-custom;
+  font-weight: 900;
+  font-style: bold;
+  src: url("../..#{$font-path}/#{$font-name}.woff") format("woff"),
+};
