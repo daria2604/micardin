@@ -1,0 +1,11 @@
+.advantages {
+  padding-bottom: 40px;
+  
+  background-color: $color-section;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+  }
+}
