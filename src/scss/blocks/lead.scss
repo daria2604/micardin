@@ -1,0 +1,28 @@
+.lead {
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    margin-top: 30px;
+  }
+
+  &__title {
+    font-size: $fz-lead-heading;
+    font-weight: $font-weight-heavy;
+    letter-spacing: -2px;
+    line-height: .8;
+    text-align: center;
+    text-wrap: pretty;
+
+    color: $color-heading;
+  }
+
+  &__subtitle {
+    font-weight: $font-weight-medium;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    text-wrap: wrap;
+  }
+}

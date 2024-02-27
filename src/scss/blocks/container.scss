@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  max-width: $container-width-desktop + 2 * $gap-container;
+  margin: 0 auto;
+  padding-left: $gap-container;
+  padding-right: $gap-container;
+}

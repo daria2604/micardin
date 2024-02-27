@@ -1,14 +1,91 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>MICARDIN</title>
   </head>
-  <body>
-    <div id="app">
-      <h1>hello</h1>
-    </div>
+  <body class="page">
+    <main class="main">
+      <section class="lead">
+        <div class="container">
+          <div class="lead__intro">
+            <h1 class="lead__title">Нормальное давление теперь реальность</h1>
+            <p class="lead__subtitle">
+              Подари себе шанс на новую здоровую жизнь без боли, головокружения
+              и усталости.
+            </p>
+          </div>
+        </div>
+
+        <div class="offer">
+          <div class="offer__image">
+            <img
+              src="./src/images/lead-image.png"
+              alt=""
+              class="offer__image-pic"
+            />
+          </div>
+          <div class="container">
+            <div class="offer__form">
+              <div class="timer">
+                <p class="timer__heading">До конца акции в 50% осталось:</p>
+                <div id="timer" class="timer__counter">
+                  <div class="timer__block">
+                    <div class="timer__segment">
+                      <span class="timer__hours"></span>
+                    </div>
+                    <span class="timer__divider">:</span>
+                    <span class="timer__text">Часов</span>
+                  </div>
+                  <div class="timer__block">
+                    <div class="timer__segment">
+                      <span class="timer__minutes"></span>
+                    </div>
+                    <span class="timer__divider">:</span>
+                    <span class="timer__text">Минут</span>
+                  </div>
+                  <div class="timer__block">
+                    <div class="timer__segment">
+                      <span class="timer__seconds"></span>
+                    </div>
+                    <span class="timer__text">Секунд</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price">
+                <div class="price__col">
+                  <p class="price__text price__text--old">Старая цена <span class="price__text--crossed">$ 99</span></p>
+                </div>
+                <div class="price__col">
+                  <p class="price__text price__text--new"> 
+                    <span class="price__text--fz-big">Новая цена</span>
+                    <span class="price__text--fz-huge">$ 49</span>
+                  </p>
+                </div>
+              </div>
+              <form class="form">
+                <div class="form__col">
+                  <div class="form__row form__row--inputs">
+                    <div class="form__input">
+                      <input type="text" name="name" class="form__input-control" placeholder="Имя">
+                    </div>
+                    <div class="form__input">
+                      <input type="tel" name="number" class="form__input-control" placeholder="Номер телефона">
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__button">
+                      <button class="form__button-submit" type="submit">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
