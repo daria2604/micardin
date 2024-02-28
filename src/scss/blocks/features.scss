@@ -1,0 +1,18 @@
+.features {
+  &__heading {
+    font-size: $fz-main-heading;
+    font-weight: $font-weight-heavy;
+    line-height: 1;
+    text-align: center;
+
+    color: $color-heading;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    margin-top: 26px;
+  }
+}

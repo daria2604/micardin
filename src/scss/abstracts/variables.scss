@@ -3,6 +3,7 @@
 */
 $black: #000;
 $astronaut: #232E72;
+$kashmir-blue: #495A95;
 $dodger-blue: #3A5CFD;
 $cornflower-blue: #50AAF6;
 $french-pass: #B9DFFF;
@@ -14,15 +15,17 @@ $silver-chalice: #A3A3A3;
 
 $color-text: $black;
 $color-heading: $astronaut;
-$color-background: $french-pass;
+$color-background: $white;
 $color-timer-background: $cornflower-blue;
 $color-timer-segment: $guardsman-red;
 $color-price-old: $astronaut;
 $color-price-new: $red-orange;
 $color-placeholder: $silver-chalice;
 $color-button: $astronaut;
-$color-section: $white;
+$color-section: $french-pass;
 $color-marker: $red-orange;
+$color-accent-number: $red-orange;
+$color-feature-text: $kashmir-blue;
 
 /**
 * Fonts
@@ -47,7 +50,7 @@ $font-family-custom: 'FuturaPT';
 $font-family: $font-family-custom, $font-family-default;
 $font-path: '/src/fonts';
 
-$fz-lead-heading: $font-size-huge;
+$fz-main-heading: $font-size-huge;
 $fz-timer: $font-size-huge;
 $fz-advantage-heading: $font-size-big;
 

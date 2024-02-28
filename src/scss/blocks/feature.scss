@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 14px;
+  
+  &__icon-pic {
+    display: block;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  &__text {
+    line-height: 1;
+    color: $color-feature-text;
+  }
+}
