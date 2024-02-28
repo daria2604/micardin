@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+
+  &__wrap {
+    position: relative;
+    z-index: -1;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    padding: 21px 13px 32px 13px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(0deg, rgba($astronaut, 1) 0%, rgba($dodger-blue, 1) 100%);
+    box-shadow: $box-shadow;
+
+    &::before {
+      position: absolute;
+      top: -140px;
+      right: auto;
+      left: auto;
+      z-index: -1;
+
+      display: block;
+      width: 100%;
+      height: 140px;
+
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: $dodger-blue;
+      content: "";
+    }
+  }
+
+  &__info {
+    min-width: 248px;
+  }
+
+  &__title {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-heavy;
+    text-align: center;
+    text-wrap: pretty;
+
+    color: $white;
+  }
+
+  &__text {
+    font-size: $font-size-small;
+    text-align: center;
+    text-wrap: balance;
+
+    margin-top: 20px;
+
+    color: $white;
+  }
+
+  &__image {
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 297px;
+    height: 297px;
+
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+
+    &-pic {
+      border-radius: 50%;
+      object-fit: none;
+
+      &--back {
+        position: relative;
+
+        width: 297px;
+        height: 297px;
+  
+        opacity: .5;
+        scale: 1.2;
+      }
+
+      &--top {
+        position: absolute;
+        z-index: 1;
+
+        width: 277px;
+        height: 277px;
+      }
+    }
+  }
+}
