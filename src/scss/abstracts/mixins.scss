@@ -1,0 +1,9 @@
+@mixin heading {
+  font-size: $fz-main-heading;
+  font-weight: $font-weight-heavy;
+  text-align: center;
+  line-height: 1;
+  text-wrap: pretty;
+
+  color: $color-heading;
+}

@@ -1,11 +1,6 @@
 .features {
   &__heading {
-    font-size: $fz-main-heading;
-    font-weight: $font-weight-heavy;
-    line-height: 1;
-    text-align: center;
-
-    color: $color-heading;
+    @include heading;
   }
 
   &__list {

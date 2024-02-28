@@ -3,13 +3,9 @@
   padding-bottom: 34px;
 
   &__heading {
-    font-size: $fz-main-heading;
-    font-weight: $font-weight-heavy;
-    text-align: center;
-    line-height: 1;
+    @include heading;
+    
     letter-spacing: -1.5px;
-
-    color: $color-heading;
   }
 
   &__about {

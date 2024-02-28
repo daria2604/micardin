@@ -50,6 +50,11 @@
     box-shadow: $box-shadow;
 
     background-color: $color-timer-background;
+
+    @media (min-width: 768px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
   }
 
   &--bottom {

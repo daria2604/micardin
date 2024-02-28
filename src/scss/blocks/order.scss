@@ -5,8 +5,6 @@
     display: grid;
     row-gap: 18px;
 
-    padding-top: 30px;
-
     @media (min-width: 768px) {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
@@ -14,8 +12,6 @@
   }
 
   &__wrap {
-    padding-top: 15px;
-
     background: linear-gradient(0deg, transparent 70%, rgba($white, 1) 90%);
   }
 

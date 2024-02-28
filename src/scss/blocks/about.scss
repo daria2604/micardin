@@ -60,6 +60,10 @@
       margin-left: -36px;
 
       object-fit: cover;
+
+      @media (min-width: 768px) {
+        margin-left: auto;
+      }
     }
   }
 

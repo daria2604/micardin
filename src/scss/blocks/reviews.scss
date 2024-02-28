@@ -6,15 +6,11 @@
   background-color: $color-section;
 
   &__heading {
-    font-size: $fz-main-heading;
-    font-weight: $font-weight-heavy;
+    @include heading;
+    
     line-height: .8;
-    text-align: center;
-    text-wrap: pretty;
 
     padding-top: 31px;
-
-    color: $color-heading;
 
     &--uppercase{
       text-transform: uppercase;
@@ -53,8 +49,11 @@
 
   &__info {
     margin-top: 50px;
-    margin-bottom: 20px;
     padding: 0 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 27px;
+    }
 
     &-text {
       text-align: center;
@@ -63,24 +62,50 @@
       text-wrap: pretty;
   
       color: $color-review-text;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-big;
+      }
     }
   }
 
   &__image {
-    height: 272px;
-    width: 390px;
+    min-height: 323px;
+    min-width: 390px;
+    margin-bottom: 15px;
+
+    &-pic {
+      height: 323px;
+      min-width: 390px;
+      position: absolute;
+      bottom: -30px;
+      left: -35px;
+
+      object-fit: contain;
+
+      @media (min-width: 425px) {
+        left: auto;
+        bottom: -53px;
+
+        height: 363px;
+        margin-bottom: 30px;
+      }
+    }
 
     &::before {
       position: absolute;
-      bottom: -45px;
-      left: 0;
-      z-index: -1;
-      display: block;
+      bottom: 0;
+      left: auto;
+      
       width: 100%;
-      height: 323px;
-  
-      background: url("/src/images/product-2.png") center/cover no-repeat;
+      height: 15px;
+
+      background-color: $color-background;
       content: "";
+
+      @media (min-width: 425px) {
+        height: 30px;
+      }
     }
   }
 }

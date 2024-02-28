@@ -6,6 +6,10 @@
     text-wrap: nowrap;
 
     color: $color-heading;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-big;
+    }
   }
 
   &__counter {
@@ -57,6 +61,11 @@
 
       content: "";
     }
+
+    @media (min-width: 768px) {
+      font-size: 55px;
+      width: 76px;
+    }
   }
 
   &__divider {
@@ -69,6 +78,12 @@
     display: inline-block;
 
     color: $color-timer-segment;
+
+    @media (min-width: 768px) {
+      font-size: 55px;
+
+      right: -11px;
+    }
   }
 
   &__text {
@@ -80,5 +95,9 @@
     text-transform: uppercase;
 
     color: $color-timer-segment;
+
+    @media (min-width: 768px) {
+      font-size: $font-size-normal;
+    }
   }
 }
