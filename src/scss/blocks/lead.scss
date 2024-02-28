@@ -2,11 +2,24 @@
   background-color: $color-section;
 
   &__intro {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     row-gap: 18px;
 
     padding-top: 30px;
+
+    @media (min-width: 768px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 18px;
+    padding: 0 20px;
   }
 
   &__title {
@@ -26,5 +39,18 @@
     line-height: 1;
     text-align: center;
     text-wrap: wrap;
+  }
+
+  &__image {
+    position: relative;
+    bottom: -14px;
+    left: -35px;
+
+    width: 372px;
+    min-height: 360px;
+
+    @media (min-width: 768px) {
+      order: -1;
+    }
   }
 }

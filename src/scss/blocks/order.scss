@@ -1,6 +1,18 @@
 .order {
   background-color: $color-section;
 
+  &__header {
+    display: grid;
+    row-gap: 18px;
+
+    padding-top: 30px;
+
+    @media (min-width: 768px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
   &__wrap {
     padding-top: 15px;
 
@@ -22,6 +34,19 @@
 
     &--uppercase {
       text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    position: relative;
+    bottom: -14px;
+    left: -35px;
+
+    width: 372px;
+    min-height: 360px;
+
+    @media (min-width: 768px) {
+      order: -1;
     }
   }
 }

@@ -1,0 +1,33 @@
+.slider {
+  .swiper {
+    &-pagination {
+      display: block;
+
+      border-radius: 50%;
+      border: 1px solid $black;
+      background-color: $white;
+
+      &-active {
+        background-color: $red-orange;
+      }
+    }
+  }
+
+  &--reviews {
+    .swiper {
+      &-pagination {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  &--cards {
+    .swiper {
+      &-pagination {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+}

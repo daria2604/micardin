@@ -2,6 +2,19 @@
   &__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 50px;
+
+    @media (min-width: 550px) {
+      flex-direction: row;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 15px;
   }
 }

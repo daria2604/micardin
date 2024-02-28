@@ -38,22 +38,6 @@
     align-items: center;
     justify-content: center;
     column-gap: 24px;
-    
-    .swiper {
-      &-pagination {
-        display: block;
-        width: 15px;
-        height: 15px;
-
-        border-radius: 50%;
-        border: 1px solid $black;
-        background-color: $white;
-
-        &-active {
-          background-color: $red-orange;
-        }
-      }
-    }
   }
 
   &__info {
@@ -73,7 +57,7 @@
 
   &__image {
     height: 272px;
-    width: 100%;
+    width: 390px;
 
     &::before {
       position: absolute;
