@@ -1,14 +1,16 @@
 .slider {
   .swiper {
     &-pagination {
-      display: block;
+      &-bullet {
+        display: block;
 
-      border-radius: 50%;
-      border: 1px solid $black;
-      background-color: $white;
-
-      &-active {
-        background-color: $red-orange;
+        border-radius: 50%;
+        border: 1px solid $black;
+        background-color: $white;
+        
+        &-active {
+          background-color: $red-orange;
+        }
       }
     }
   }
@@ -16,8 +18,10 @@
   &--reviews {
     .swiper {
       &-pagination {
-        width: 15px;
-        height: 15px;
+        &-bullet{ 
+          width: 15px;
+          height: 15px;
+        }
       }
     }
   }
@@ -25,8 +29,10 @@
   &--cards {
     .swiper {
       &-pagination {
-        width: 11px;
-        height: 11px;
+        &-bullet {
+          width: 11px;
+          height: 11px;
+        }
       }
     }
   }

@@ -1,25 +1,26 @@
 .offer {
+  position: relative;
   overflow: hidden;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 117px;
+
+    background-color: $white;
+    content: "";
+  }
 
   &__container {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 
     padding-bottom: 45px;
     
-    &::before {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-  
-      display: block;
-      width: 100%;
-      height: 117px;
-  
-      background-color: $white;
-      content: "";
-    }
   }
 
   &__image {
@@ -51,13 +52,14 @@
     background-color: $color-timer-background;
   }
 
+  &--bottom {
+    &::before {
+      display: none;
+    }
+  }
   &--bottom & {
     &__container {
       padding-bottom: 30px;
-
-      &::before {
-        display: none;
-      }
     }
   }
 }

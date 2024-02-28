@@ -4,4 +4,9 @@
   margin: 0 auto;
   padding-left: $gap-container;
   padding-right: $gap-container;
+
+  @media (min-width: 768px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
