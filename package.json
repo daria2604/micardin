@@ -13,6 +13,7 @@
     "vite": "^5.1.4"
   },
   "dependencies": {
-    "easytimer.js": "^4.6.0"
+    "easytimer.js": "^4.6.0",
+    "swiper": "^11.0.7"
   }
 }

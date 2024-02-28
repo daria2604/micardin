@@ -1,0 +1,91 @@
+.reviews {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  background-color: $color-section;
+
+  &__heading {
+    font-size: $fz-main-heading;
+    font-weight: $font-weight-heavy;
+    line-height: .8;
+    text-align: center;
+    text-wrap: pretty;
+
+    padding-top: 31px;
+
+    color: $color-heading;
+
+    &--uppercase{
+      text-transform: uppercase;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+    
+    margin-top: 45px;
+  }
+
+  &__list {
+    display: flex;
+    padding-bottom: 24px;
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    
+    .swiper {
+      &-pagination {
+        display: block;
+        width: 15px;
+        height: 15px;
+
+        border-radius: 50%;
+        border: 1px solid $black;
+        background-color: $white;
+
+        &-active {
+          background-color: $red-orange;
+        }
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0 24px;
+
+    &-text {
+      text-align: center;
+      font-weight: $font-weight-medium;
+      line-height: 1;
+      text-wrap: pretty;
+  
+      color: $color-review-text;
+    }
+  }
+
+  &__image {
+    height: 272px;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 323px;
+  
+      background: url("/src/images/product-2.png") center/cover no-repeat;
+      content: "";
+    }
+  }
+}
