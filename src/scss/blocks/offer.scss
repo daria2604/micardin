@@ -50,4 +50,14 @@
 
     background-color: $color-timer-background;
   }
+
+  &--bottom & {
+    &__container {
+      padding-bottom: 30px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
 }

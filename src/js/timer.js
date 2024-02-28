@@ -8,6 +8,9 @@ const CLASSES = {
 
 export default function () {
   const timer = new Timer();
+  const hoursEl = document.querySelectorAll(CLASSES.hours)
+  const minutesEl = document.querySelectorAll(CLASSES.minutes)
+  const secondsEl = document.querySelectorAll(CLASSES.seconds)
 
   timer.start({
     countdown: true,
@@ -15,13 +18,16 @@ export default function () {
   });
 
   timer.addEventListener('secondsUpdated', function (e) {
-    document.querySelector(CLASSES.hours).innerHTML =
-      timer.getTimeValues().hours;
+    hoursEl.forEach((el) => {
+      el.innerHTML = timer.getTimeValues().hours;
+    })
 
-    document.querySelector(CLASSES.minutes).innerHTML =
-      timer.getTimeValues().minutes;
+    minutesEl.forEach((el) => {
+      el.innerHTML = timer.getTimeValues().minutes;
+    })
 
-    document.querySelector(CLASSES.seconds).innerHTML =
-      timer.getTimeValues().seconds;
+    secondsEl.forEach((el) => {
+      el.innerHTML = timer.getTimeValues().seconds;
+    })
   });
 }

@@ -1,0 +1,27 @@
+.order {
+  background-color: $color-section;
+
+  &__wrap {
+    padding-top: 15px;
+
+    background: linear-gradient(0deg, transparent 70%, rgba($white, 1) 90%);
+  }
+
+  &__text {
+    font-weight: $font-weight-heavy;
+    font-size: $font-size-big;
+    line-height: 1;
+    text-align: center;
+    text-wrap: pretty;
+
+    color: $color-order-text;
+
+    &--red {
+      color: $red-orange;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+}
